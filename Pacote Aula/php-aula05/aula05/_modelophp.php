@@ -8,7 +8,10 @@
 <body>
 <div>
     <?php
-        
+        $n1 = 1;
+        $n2 = 2;
+        $s = $n1 + $n2;
+        echo "A soma entre N1 e N2 é igual a $s";
     ?>
 </div>
 </body>

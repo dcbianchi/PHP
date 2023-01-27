@@ -8,7 +8,10 @@
 <body>
 <div>
     <?php
-        
+        $n1 = 3;
+        $n2 = 2;
+        $s = $n1 + $n2;
+        echo "N1 + N2 = $s";
     ?>
 </div>
 </body>
