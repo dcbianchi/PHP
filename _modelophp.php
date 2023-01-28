@@ -17,10 +17,10 @@
     <?php
       $a = $_GET["a"];
       $b = $_GET["b"];
-      $maior = $a>$b?$a:$b;
-
-      echo $maior;
-
+      $c = $_GET["c"];
+      $media = (($a+$b+$c)/3);
+          
+      echo "A media é ". number_format($media,1). " O ALUNO ESTA: ". ($media<7?"REPROVADO":"APROVADO");
     ?>
 </div>
 </body>
