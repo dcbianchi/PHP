@@ -15,13 +15,12 @@
 <body>
 <div>
     <?php
-      $a = $_GET["a"];
-      $b = $_GET["b"];
-      $c = $_GET["c"];
-      $media = (($a+$b+$c)/3);
-          
-      echo "A media é ". number_format($media,1). " O ALUNO ESTA: ". ($media<7?"REPROVADO":"APROVADO");
+        echo "<h2> Aula 8 - Exercicio 1 </h2>";
+        $n = $_GET["v"];
+        
     ?>
+    <br>
+    <a href="_modelohtml.html">Voltar</a>
 </div>
 </body>
 </html>
