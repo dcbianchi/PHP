@@ -16,18 +16,21 @@
 <div>
     <h2> Aula 8 - Exercicio 3 </h2><br>
     <form method="get" action="_modelophp.php">
-        Nome: <input type="text" name="nome"><br>
-        Ano de Nascimento: <input type="number" name="ano"><br>
-        <fieldset><legend>Sexo</legend>
-            <input type="radio" name="sexo" id="masc" value="Masculino" checked>
-            <label for="masc">Masculino</label><br>
-            <input type="radio" name="sexo" id="fem" value="Feminino">
-            <label for="fem">Feminino</label><br>
-        </fieldset><br>
-
-      <input type="submit" value="enviar">
+        <label>Texto: </label>
+        <input type="text" name="t" id="txt"><br>
+        <label>Tamanho</label>
+        <select name="tam" id="itam">
+            <option value="8pt">8pt</option>
+            <option value="10pt">10pt</option>
+            <option value="12pt">12pt</option>
+            <option value="14pt">14pt</option>
+            <option value="16pt">16pt</option>
+            <option value="18pt">18pt</option>
+        </select> <br>
+        <label for="icor">Cor: </label>
+        <input type="color" name="cor" id="cor"><br>
+        <input type="submit" value="enviar">   
     </form>
 </div>
 </body>
 </html>
- 
