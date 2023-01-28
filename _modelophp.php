@@ -17,11 +17,25 @@
     <?php
       switch ($op){
         case 1:
+          $s = "Domingo";
+          $p = "Não precisa ir";
+        break;
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+          $s = "Dia da semana";
+          $p = "precisa ir";
+        break;
+        case 7:
+          $s = "Sabado";
+          $p = "Não precisa ir";
         break;
       }
 
-      echo "Você escolheu $op<br>";
-      echo "O resultado da operação é $r";
+      echo "$n Hojé $s <br>";
+      echo "E você $p pra escola";
     ?>
     <br>
     <a href="_modelohtml.html" class="botao"> Voltar </a>
