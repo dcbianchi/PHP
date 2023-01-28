@@ -15,10 +15,20 @@
 <body>
 <div>
     <?php
-        echo "<h2> Aula 8 - Exercicio 2 </h2>";
-        $n = $_GET["v"];
-        $rq = sqrt($n);
-        echo "<br> A raiz de $n é ". number_format($rq,2);
+        echo "<h2> Aula 8 - Exercicio 3 </h2>";
+        $nome = isset($_GET["nome"])?$_GET["nome"]:"[Não Informado";
+        $ano = isset($_GET["ano"])?$_GET["ano"]:1700;
+        $idade = date("Y") - $ano;
+        $sexo = isset($_GET["sexo"])?$_GET["sexo"]:"[Nao informado]";
+        $reg = $sexo=="Masculino"?"o":"a";
+
+        echo "Olá $nome<br>";
+        echo "Você nasceu em $ano e tem $idade anos.";
+        echo "<br> e foi registrad<strong>$reg</strong> como $sexo";
+
+
+        
+        
     ?>
     <br>
     <a href="_modelohtml.html">Voltar</a>

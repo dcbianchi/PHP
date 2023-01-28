@@ -14,11 +14,18 @@
 </head>
 <body>
 <div>
-    <h2> Aula 8 - Exercicio 2 </h2><br>
+    <h2> Aula 8 - Exercicio 3 </h2><br>
     <form method="get" action="_modelophp.php">
-        Valor: <input type="number" name="v"/>
-        <input type="submit" value="calcular raiz">
+        Nome: <input type="text" name="nome"><br>
+        Ano de Nascimento: <input type="number" name="ano"><br>
+        <fieldset><legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="Masculino" checked>
+            <label for="masc">Masculino</label><br>
+            <input type="radio" name="sexo" id="fem" value="Feminino">
+            <label for="fem">Feminino</label><br>
+        </fieldset><br>
 
+      <input type="submit" value="enviar">
     </form>
 </div>
 </body>
