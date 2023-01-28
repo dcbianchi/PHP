@@ -5,27 +5,26 @@
   <meta charset="UTF-8"/>
   <title>PHP - Aprendendo</title>
   <?php
-    $txt = isset($_GET["t"])?$_GET["t"]:"[Texto Generico]";
-    $tam = isset($_GET["tam"])?$_GET["tam"]:"8pt";
-    $cor = isset($_GET["cor"])?$_GET["cor"]:"#000000";
+    $nome = $_GET["nome"]?$_GET["nome"]:"Anonimo";
+    $AnoNasc = $_GET["AnoNasc"]?$_GET["AnoNasc"]:"1990";
+    $idade = date("Y") - $AnoNasc;
   ?>
-  <style>
-    h2 {
-      font: 15pt arial;
-      color: #171559;
-      font-weight: bold;
-    }
-    span.texto {
-      font-size: <?php echo $tam; ?>;
-      color: <?php echo $cor; ?>;
-    }
-  </style>
 </head>
 <body>
 <div>
-    <span class=texto> <?php echo "$txt"; ?> </span>
-    <br>
-    <a href="_modelohtml.html">Voltar</a>
+    <h2> Aula 9 - Exercicio 02 </h2>
+    <?php
+      if ($idade<16) {
+        $v = "Não pode Votar";
+      } elseif (($idade>=16 && $idade<18) || ($idade>64)){
+          $v = "Voto opicional";
+        } else {
+          $v = "Voto Obrigatorio";
+        }
+      echo "$nome nasceu em $AnoNasc e tem $idade anos: <br>";
+      echo "$v";
+    ?>
+    <br> <a href="_modelohtml.html"> Voltar </a>
 </div>
 </body>
 </html>

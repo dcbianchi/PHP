@@ -5,7 +5,11 @@ body {
     background: url("wallpaper-php.jpg") no-repeat top center fixed;
     background-size: cover;
 }
-
+h2 {
+    font: 15pt arial;
+    color: #171559;
+    font-weight: bold;
+  }
 div::before {
     content: " Curso de PHP para Iniciantes - by Gustavo Guanabara ";
     font: 10pt Arial;
