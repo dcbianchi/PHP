@@ -5,26 +5,27 @@
   <meta charset="UTF-8"/>
   <title>PHP - Aprendendo</title>
   <?php
-    $nome = $_GET["nome"]?$_GET["nome"]:"Anonimo";
-    $AnoNasc = $_GET["AnoNasc"]?$_GET["AnoNasc"]:"1990";
-    $idade = date("Y") - $AnoNasc;
+    $n1 = $_GET["n1"]?$_GET["n1"]:"0";
+    $n2 = $_GET["n2"]?$_GET["n2"]:"0";
+    $m = ($n1 + $n2) / 2;
   ?>
 </head>
 <body>
 <div>
-    <h2> Aula 9 - Exercicio 02 </h2>
+    <h2> Aula 9 - Exercicio 03 </h2>
     <?php
-      if ($idade<16) {
-        $v = "Não pode Votar";
-      } elseif (($idade>=16 && $idade<18) || ($idade>64)){
-          $v = "Voto opicional";
+      if ($m<5) {
+        $s = "REPROVADO";
+      } elseif ($m>=5 & $m<7) {
+          $s = "em Recuperação";
         } else {
-          $v = "Voto Obrigatorio";
+          $s = "APROVADO";
         }
-      echo "$nome nasceu em $AnoNasc e tem $idade anos: <br>";
-      echo "$v";
+      echo "A media entre $n1 e $n2 é $m<br>";
+      echo "O aluno esta $s";
     ?>
-    <br> <a href="_modelohtml.html"> Voltar </a>
+    <br>
+    <button><a href="_modelohtml.html"> Voltar </a></button>
 </div>
 </body>
 </html>
