@@ -15,9 +15,10 @@
 <body>
 <div>
     <?php
-        echo "<h2> Aula 8 - Exercicio 1 </h2>";
+        echo "<h2> Aula 8 - Exercicio 2 </h2>";
         $n = $_GET["v"];
-        
+        $rq = sqrt($n);
+        echo "<br> A raiz de $n é ". number_format($rq,2);
     ?>
     <br>
     <a href="_modelohtml.html">Voltar</a>
