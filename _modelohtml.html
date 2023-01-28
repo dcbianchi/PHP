@@ -7,14 +7,28 @@
 </head>
 <body>
 <div>
-    <h2> Aula 9 - Exercicio 03 </h2>
+    <h2> Aula 10 - Exercicio 01 </h2>
     <form method="get" action="_modelophp.php">
-        <label>Nota 1: </label>
-        <input type="number" name="n1" value="n1"><br>
-        <label>Nota 2: </label>
-        <input type="number" name="n2" value="n2"><br>
-
-        <button><input type="submit" value="Verificar"></button>
+        <label for="n">Nome: </label>
+        <input type="text" name="n"><br>
+        <label>Operação: </label>
+            <fieldset><legend>Operação</legend>
+                <input type="radio" name="op" id="dom" value="1" checked>
+                <label for="dom">Domingo</label>
+                <input type="radio" name="op" id="seg" value="2">
+                <label for="seg">Segunda</label>
+                <input type="radio" name="op" id="ter" value="3">
+                <label for="ter">Terça</label>
+                <input type="radio" name="op" id="qua" value="4">
+                <label for="qua">Quarta</label>
+                <input type="radio" name="op" id="qui" value="5">
+                <label for="qui">Quinta</label>
+                <input type="radio" name="op" id="sex" value="6">
+                <label for="sex">Sexta</label>
+                <input type="radio" name="op" id="sab" value="7">
+                <label for="sab">Sabado</label>
+            </fieldset>
+        <button class="botao" type="submit">Verificar</button>
     </form>
 </div>
 </body>
