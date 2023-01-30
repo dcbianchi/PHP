@@ -5,20 +5,30 @@
   <meta charset="UTF-8"/>
   <title>PHP - Aprendendo</title>
   
-  <!-- <?php
- //$ = $_GET["uf"]?$_GET["uf"]:"0";
-  ?> -->
+  <?php
+    $s = $_GET["S"]?$_GET["S"]:"0";
+    $f = $_GET["F"]?$_GET["F"]:"0";
+  ?>
 
 </head>
 <body>
 <div>
-    <h2> Aula 11 - Exercicio 02 </h2>
+    <h2> Aula 11 - Exercicio 03 </h2>
     <?php
-      $c = 10;
-      while ($c > 1) {
-        echo "$c ";
-        $c--; //$c = $c-1
+   if ($s<$f){
+      $c = $s;
+      while ($c<=$f) {
+        echo "$c <br>";
+        $c ++;
       }
+  } else {
+      $c = $s;
+      while ($c>=$f) {
+        echo "$c <br>";
+        $c--;
+      }
+   }
+      
     ?>
     <br>
     <a href="_modelohtml.html" class="botao"> Voltar </a>
