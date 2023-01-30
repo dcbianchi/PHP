@@ -7,7 +7,7 @@
 </head>
 <body>
 <div>
-    <h2> Aula 15 - Exercicio 01 </h2>
+    <h2> Aula 16 - Exercicio 01 </h2>
     <h3>Rotinas</h3>
     <?php
       require "funcoes.php";
