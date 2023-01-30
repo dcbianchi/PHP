@@ -15,9 +15,12 @@
 <body>
 <div>
     <h2> Aula 13 - Exercicio 02 </h2>
-    <h3>Contagens </h3>
+    <h3>Taboada |X| </h3>
     <?php
-      
+      for ($c=1;$c<=10;$c++){
+        $t = $n*$c;
+        echo "$n X $c = $t<br>";
+      }
     ?>
     <br>
     <a href="_modelohtml.html" class="botao"> Voltar </a>
