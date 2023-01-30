@@ -6,39 +6,59 @@
   <title>PHP - Aprendendo</title>
   
   <?php
-    $n = $_GET["n"]?$_GET["n"]:"Gafanhoto";
-    $op = $_GET["op"]?$_GET["op"]:"0";
+    $uf = $_GET["uf"]?$_GET["uf"]:"0";
   ?>
 
 </head>
 <body>
 <div>
-    <h2> Aula 10 - Exercicio 03 </h2>
+    <h2> Aula 10 - Exercicio 04 </h2>
     <?php
-      switch ($op){
+      switch ($uf){
         case 1:
-          $s = "Domingo";
-          $p = "Não precisa ir";
-        break;
+          $reg = "Norte";
+          break;
         case 2:
+          $reg = "Nordeste";
+          break;
         case 3:
+          $reg = "Centro-Oeste";
+          break;
         case 4:
+          $reg = "Sudeste";
+          break;
         case 5:
-        case 6:
-          $s = "Dia da semana";
-          $p = "precisa ir";
-        break;
-        case 7:
-          $s = "Sabado";
-          $p = "Não precisa ir";
-        break;
+          $reg = "Sul";
+          break;
+        default:
+        $reg = "errado";
       }
 
-      echo "$n Hoje é $s <br>";
-      echo "E você $p pra escola";
+      echo "Fica na região $reg";
     ?>
     <br>
     <a href="_modelohtml.html" class="botao"> Voltar </a>
 </div>
+          
+            <!-- 3 Centro-Oeste -->
+            <option>Goiás</option>
+            <option>Mato Grosso</option>
+            <option>Mato Grosso do Sul</option>
+            <option>Distrito Federal</option>
+            <!-- 4 Sudeste -->
+            <option>Espírito Santo</option>
+            <option>Minas Gerais</option>
+            <option> Rio de Janeiro</option>
+            <option>São Paulo</option>
+            <!-- 5 Sul -->
+            <option>Paraná</option>
+            <option> Rio Grande do Sul </option>
+            <option>Santa Catarina</option> 
+
+
+
+
+
+
 </body>
 </html>
