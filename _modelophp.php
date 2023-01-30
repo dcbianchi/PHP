@@ -10,7 +10,20 @@
     <h2> Aula 14 - Exercicio 01 </h2>
     <h3>Rotinas</h3>
     <?php
-      
+      $a = $_GET["a"]?$_GET["a"]:1;
+      $b = $_GET["b"]?$_GET["b"]:1;
+
+      function soma () {
+        $p = func_get_args();
+        $tot = func_num_args();
+        $s=0;
+        for ($i=0;$i<$tot;$i++) {
+          $s+=$p[$i];
+        }
+        return $s;
+      }
+    
+      echo $r=soma(4,5,2);
     ?>
     <br>
     <br><a href="_modelohtml.html" class="botao"> Voltar </a>
