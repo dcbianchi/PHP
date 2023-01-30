@@ -39,26 +39,5 @@
     <br>
     <a href="_modelohtml.html" class="botao"> Voltar </a>
 </div>
-          
-            <!-- 3 Centro-Oeste -->
-            <option>Goiás</option>
-            <option>Mato Grosso</option>
-            <option>Mato Grosso do Sul</option>
-            <option>Distrito Federal</option>
-            <!-- 4 Sudeste -->
-            <option>Espírito Santo</option>
-            <option>Minas Gerais</option>
-            <option> Rio de Janeiro</option>
-            <option>São Paulo</option>
-            <!-- 5 Sul -->
-            <option>Paraná</option>
-            <option> Rio Grande do Sul </option>
-            <option>Santa Catarina</option> 
-
-
-
-
-
-
 </body>
 </html>
