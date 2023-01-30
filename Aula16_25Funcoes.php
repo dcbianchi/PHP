@@ -9,13 +9,12 @@
 <div>
      
     <?php
-        $nome ="   Jose da Silva   ";
-        echo $nome;
-        echo(strlen($nome));
-        $novo = trim($nome);
-        echo "<br> ". $novo;
-        echo (strlen($novo));
+        $site = "Curso em video";
+        $v = explode(" ", $site);
+        print_r($v);
 
+        $texto = implode("#", $v);
+        print("/n $texto");
     ?>
     <br> <a href="_modelohtml.html" class="botao"> Voltar </a>
 
