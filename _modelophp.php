@@ -6,8 +6,9 @@
   <title>PHP - Aprendendo</title>
   
   <?php
-    $s = $_GET["S"]?$_GET["S"]:"0";
-    $f = $_GET["F"]?$_GET["F"]:"0";
+    $s = $_GET["s"]?$_GET["s"]:"0";
+    $f = $_GET["s"]?$_GET["f"]:"0";
+    $p = $_GET["p"]?$_GET["p"]:"0";
   ?>
 
 </head>
@@ -15,19 +16,19 @@
 <div>
     <h2> Aula 11 - Exercicio 03 </h2>
     <?php
-   if ($s<$f){
+    if ($s<$f){
       $c = $s;
-      while ($c<=$f) {
+      do {
         echo "$c <br>";
-        $c ++;
-      }
-  } else {
+        $c = $c + $p;
+      } while ($c<=$f);
+    } else {
       $c = $s;
-      while ($c>=$f) {
+      do  {
         echo "$c <br>";
-        $c--;
-      }
-   }
+        $c = $c - $p;
+      } while ($c>=$f);
+    }
       
     ?>
     <br>
