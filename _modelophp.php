@@ -6,30 +6,24 @@
   <title>PHP - Aprendendo</title>
   
   <?php
-    $s = $_GET["s"]?$_GET["s"]:"0";
-    $f = $_GET["s"]?$_GET["f"]:"0";
-    $p = $_GET["p"]?$_GET["p"]:"0";
+    $n = $_GET["n"]?$_GET["n"]:"2";
+    //$f = $_GET["s"]?$_GET["f"]:"0";
+    //$p = $_GET["p"]?$_GET["p"]:"0";
   ?>
 
 </head>
 <body>
 <div>
-    <h2> Aula 11 - Exercicio 03 </h2>
+    <h2> Aula 12 - Exercicio 02 </h2>
+    <h3>Fatorial</h3>
     <?php
-    if ($s<$f){
-      $c = $s;
+      $c = $n;
+      $fat=1;
       do {
-        echo "$c <br>";
-        $c = $c + $p;
-      } while ($c<=$f);
-    } else {
-      $c = $s;
-      do  {
-        echo "$c <br>";
-        $c = $c - $p;
-      } while ($c>=$f);
-    }
-      
+        $fat = $fat*$c;
+        $c--;
+      } while ($c>=1);
+      echo "<h4> $n! = $fat</h4>";
     ?>
     <br>
     <a href="_modelohtml.html" class="botao"> Voltar </a>
