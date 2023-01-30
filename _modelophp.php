@@ -14,15 +14,10 @@
 </head>
 <body>
 <div>
-    <h2> Aula 12 - Exercicio 02 </h2>
-    <h3>Taboada |*| </h3>
+    <h2> Aula 13 - Exercicio 02 </h2>
+    <h3>Contagens </h3>
     <?php
-      $c = 1;
-      do {
-        $t = $n*$c;
-        echo "$n X $c = $t <br>";
-        $c++;
-      } while ($c<=10);
+      
     ?>
     <br>
     <a href="_modelohtml.html" class="botao"> Voltar </a>
