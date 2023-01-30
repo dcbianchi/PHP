@@ -6,14 +6,14 @@
   <title>PHP - Aprendendo</title>
   
   <?php
-    $n = $_GET["n"]?$_GET["n"]:"0";
+    $n = $_GET["n"]?$_GET["n"]:"Gafanhoto";
     $op = $_GET["op"]?$_GET["op"]:"0";
   ?>
 
 </head>
 <body>
 <div>
-    <h2> Aula 10 - Exercicio 02 </h2>
+    <h2> Aula 10 - Exercicio 03 </h2>
     <?php
       switch ($op){
         case 1:
@@ -34,7 +34,7 @@
         break;
       }
 
-      echo "$n Hojé $s <br>";
+      echo "$n Hoje é $s <br>";
       echo "E você $p pra escola";
     ?>
     <br>
