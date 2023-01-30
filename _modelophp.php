@@ -6,7 +6,7 @@
   <title>PHP - Aprendendo</title>
   
   <?php
-    $n = $_GET["n"]?$_GET["n"]:"2";
+    $n = $_GET["n"]?$_GET["n"]:"1";
     //$f = $_GET["s"]?$_GET["f"]:"0";
     //$p = $_GET["p"]?$_GET["p"]:"0";
   ?>
@@ -15,15 +15,14 @@
 <body>
 <div>
     <h2> Aula 12 - Exercicio 02 </h2>
-    <h3>Fatorial</h3>
+    <h3>Taboada |*| </h3>
     <?php
-      $c = $n;
-      $fat=1;
+      $c = 1;
       do {
-        $fat = $fat*$c;
-        $c--;
-      } while ($c>=1);
-      echo "<h4> $n! = $fat</h4>";
+        $t = $n*$c;
+        echo "$n X $c = $t <br>";
+        $c++;
+      } while ($c<=10);
     ?>
     <br>
     <a href="_modelohtml.html" class="botao"> Voltar </a>
