@@ -7,22 +7,23 @@
 </head>
 <body>
 <div>
-    <h2> Aula 18 - Exercicio 01 </h2>
     <h3>Matrizes</h3>
+    <table border=8><tr>
     <?php
-      $n = array (
-        array(2,3),
-        array(8,5),
-        array(9,6)
+      $m = array (
+            array(6,4),
+            array(5,9),
+            array(3,2)
       );
-     // print_r($n);
+     // print_r($m);
       for ($i=0;$i<=2;$i++) {
         for ($j=0;$j<=1;$j++) {
-            echo $n[$i][$j]. " ";
+            echo "<td>". $m[$i][$j];
         }
-        echo "<br>";
+        echo "</tr>";
       }
     ?>
+    </table>
 
 
     <br>
