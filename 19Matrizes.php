@@ -14,7 +14,7 @@
         echo "<h4> Vetores desordenados</h4>";
         $v = array(3, 5, 8, 2);
         print_r($v);
-        sort($v);
+        rsort($v);
         echo "<h4> Vetores em ordem</h4>";
         print_r($v);
         
