@@ -8,7 +8,7 @@
 <body>
 <div>
     <h2> Aula 18 - Exercicio 01 </h2>
-    <h3>Rotinas</h3>
+    <h3>Matrizes</h3>
     <?php
       require "funcoes.php";
       ola();
