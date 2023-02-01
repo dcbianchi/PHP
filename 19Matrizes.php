@@ -8,22 +8,19 @@
 <body>
 <div>
     <h3>Matrizes</h3>
-    <table border=8><tr>
+    <pre>
     <?php
-      
-        $m = array (
-            array(6,4),
-            array(5,"a"),
-            array(3,2)
-        );
-        for ($i=0;$i<=2;$i++) {
-            for ($j=0;$j<=1;$j++) {
-                echo "<td>". $m[$i][$j];
-            }
-            echo "</tr>";
-        }
+        echo "<br>";
+        echo "<h4> Vetores desordenados</h4>";
+        $v = array(3, 5, 8, 2);
+        print_r($v);
+        sort($v);
+        echo "<h4> Vetores em ordem</h4>";
+        print_r($v);
+        
+
     ?>
-    </table>
+    </pre>
     <br>
     <a href="_modelohtml.html" class="botao"> Voltar </a>
 </div>
