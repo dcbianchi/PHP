@@ -7,17 +7,17 @@
 </head>
 <body>
 <div>
-    <h2> Aula 18 - Exercicio 01 </h2>
-    <h3>Rotinas</h3>
+    <h3>Prova</h3>
     <?php
-      require "funcoes.php";
-      ola();
-      MostraValor(17);
-      echo "<h3> finalizando programa </h3>"
-    ?>
+    for($i=0; $i<=10; $i++){
+      if($i % 3 == 0)
+        continue;
+        echo $i."-";
+    }
+    echo "Fim"
+?>
     <br>
-    <br><a href="_modelohtml.html" class="botao"> Voltar </a>
-
+    
 </div>
 </body>
 </html>
